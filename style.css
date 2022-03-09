@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+:root{
+    max-width: 1400px;
+    - Violet: hsl(257, 40%, 49%);
+    - Soft-Magenta: hsl(300, 69%, 71%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+/*
+with: 375px;
+height: 100vh;*/
+
+
+body {
+    line-height: 1;
+    height: 100vh;
+    width: 100vw;
+    background-color: hsl(257, 40%, 49%);
+    background-image: url("images/bg-mobile.svg") ;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    margin: 8% 0 -3% 10%;
+    width: 35%;
+}
+
+.mokcups img{
+    margin: 10%;
+    width: 80%;
+    padding-top: 28px;
+}
+
+.info{
+    text-align: center;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.info h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    color: white;
+    padding: 2% 12% 5% 12%;
+}
+
+.info p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    line-height: 1.8em;
+    color: white;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.register-button {
+    text-align: center;
+    margin: 7%;
+}
+button{
+    color: hsl(257, 40%, 49%);
+    background-color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8em;
+    width: 200px;
+    height: 40px;
+    border-radius: 80px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: black;
+    color: white;
+    transition: 0.2s;
+}
+
+/*-------------SOCIAL ICONS-------------*/
+footer{
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.facebook{
+    border-radius: 360px;
+    border: 1px solid;
+    padding: 8px;
+    cursor: pointer;
+    margin-right: 4px;
+}
+
+.facebook:hover{
+    color: black;
+}
+
+.twitter{
+    border-radius: 360px;
+    border: 1px solid;
+    padding: 8px;
+    cursor: pointer;
+    margin-right: 4px;
+}
+
+.twitter:hover{
+    color:black;
+}
+
+.instagram{
+    border-radius: 360px;
+    border: 1px solid;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.instagram:hover{
+    color: black;
+}
+
+@media  screen and (min-width: 800px) {
+
+    body {
+        background-image: url("images/bg-desktop.svg");
+    }
+
+    main{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .logo img{
+        margin: 40px 0 25px 62px;
+        width: 15%;
+        padding-bottom: 10px;
+    }
+
+    .mokcups{
+        width: 85%;
+
+    }
+
+    .mokcups img {
+        margin: 0 0 0 60px;
+        width: 75%;
+
+    }
+
+    .info{
+        text-align: left;
+        padding: 0;
+        margin: 0 50px 50px -100px;
+    }
+
+    .info h1{
+        font-size: 36px;
+        line-height: 1.7em;
+        padding: 0 40px 10px 0;
+        width: 80%;
+    }
+
+    .info p {
+        font-size: 16px;
+        line-height: 1.8em;
+        padding: 0 20px 0 0;
+        width: 460px;
+    }
+
+    .register-button {
+        text-align: left;
+        margin: 0;
+        padding-top: 20px;
+    }
+
+    button {
+        font-size: 16px;
+        width: 180px;
+        height: 60px;
+    }
+
+   footer{
+       position: fixed;
+       bottom: 20px;
+       right: 80px;
+       width: 200px;
+   }
+
+}
+
+@media (min-width: 1440px) {
+#root {
+    width: 1440px;
+    margin: 0 auto; // for centering
+}
+    body{
+        
+    }
+}
+
+
+
+
